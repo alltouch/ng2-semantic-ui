@@ -37,8 +37,8 @@ export class SuiDropdownMenuItem {
     // Stores the class name used for a 'selected' item.
     public selectedClass:string;
 
-    @ContentChild(forwardRef(() => SuiDropdownMenu))
-    public childDropdownMenu:SuiDropdownMenu;
+    @ContentChild(forwardRef(() => SuiDropdownMenu), { static: true })
+    public childDropdownMenu:any; // Actually type is SuiDropdownMenu
 
     public get hasChildDropdown():boolean {
         return !!this.childDropdownMenu;

@@ -1,3 +1,5 @@
 export {
-    SuiUtilityModule
+    SuiUtilityModule,
+    SuiComponentFactory,
+    PositioningPlacement
 } from "./internal";
